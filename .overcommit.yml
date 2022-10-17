@@ -1,0 +1,124 @@
+CommitMsg:
+  ALL:
+    requires_files: false
+    quiet: false
+  SpellCheck:
+    enabled: false
+
+  RussianNovel:
+    enabled: true
+
+PreCommit:
+  ALL:
+    on_warn: fail
+
+  BundleAudit:
+    enabled: true
+
+  BundleCheck:
+    enabled: true
+
+  BundleOutdated:
+    enabled: false
+
+  # TODO: will research chamber gem
+  CodeSpellCheck:
+    enabled: false
+
+  Fasterer:
+    enabled: true
+
+  Flay:
+    enabled: true
+
+  Foodcritic:
+    enabled: true
+
+  # TODO: will research
+  ImageOptim:
+    enabled: false
+
+  Pronto:
+    enabled: true
+
+  # TODO: will research
+  RakeTarget:
+    enabled: false
+
+  RailsBestPractices:
+    enabled: true
+
+  RailsSchemaUpToDate:
+    enabled: true
+
+  Reek:
+    enabled: true
+
+  RuboCop:
+    enabled: true
+
+  ScssLint:
+    enabled: true
+
+  SlimLint:
+    enabled: true
+
+  LineEndings:
+    enabled: true
+
+  # TODO: will research
+  YardCoverage:
+    enabled: false
+
+  YarnCheck:
+    enabled: true
+
+  TrailingWhitespace:
+    enabled: true
+    exclude:
+      - "**/db/structure.sql" # Ignore trailing whitespace in generated files
+
+  PostCheckout:
+    enabled: true
+    BundleInstall:
+      enabled: true
+    YarnInstall:
+      enabled: true
+
+  PostCommit:
+    enabled: true
+    BundleInstall:
+      enabled: true
+    YarnInstall:
+      enabled: true
+
+  PostMerge:
+    enabled: true
+    BundleInstall:
+      enabled: true
+    YarnInstall:
+      enabled: true
+
+  PostRewrite:
+    enabled: true
+    BundleInstall:
+      enabled: true
+    YarnInstall:
+      enabled: true
+
+PrePush:
+  Brakeman:
+    enabled: true
+
+  RSpec:
+    enabled: true
+
+  Proton:
+    enabled: true
+#
+#PostCheckout:
+#  ALL: # Special hook name that customizes all hooks of this type
+#    quiet: true # Change all post-checkout hooks to only display output on failure
+#
+#  IndexTags:
+#    enabled: true # Generate a tags file with `ctags` each time HEAD changes
