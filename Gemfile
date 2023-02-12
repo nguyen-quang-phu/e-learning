@@ -32,7 +32,7 @@ group :development, :test do
   gem 'pry' # An IRB alternative and runtime developer console
   gem 'rspec_junit_formatter' # RSpec formatter for JUnit XML output
   gem 'rswag-specs' # RSwag - Swagger-based DSL for rspec & accompanying rake task for generating Swagger files
-  gem 'rubocop', require: false # Automatic Ruby code style checking tool
+  gem 'rubocop', '~> 1.45', require: false # Automatic Ruby code style checking tool
   gem 'rubocop-performance', require: false # A collection of RuboCop cops to check for performance optimizations in Ruby code
   gem 'rubocop-rails', require: false # Automatic Rails code style checking tool
   gem 'rubocop-rspec', require: false # Code style checking for RSpec files
@@ -46,6 +46,7 @@ group :development, :test do
   gem 'pry-nav'
   gem 'database_cleaner'
   gem 'peek'
+  gem 'awesome_print', require: 'ap'
 end
 
 group :development do
@@ -65,9 +66,9 @@ group :development do
   gem 'overcommit'
   gem 'brakeman', require: false # Brakeman detects security vulnerabilities in Ruby on Rails applications via static analysis
 
-  gem 'pronto'
-  gem 'pronto-rubocop', require: false
-  gem 'pronto-flay', require: false
+  # gem 'pronto'
+  # gem 'pronto-rubocop', require: false
+  # gem 'pronto-flay', require: false
 
   # Anotation model
   gem 'annotate'

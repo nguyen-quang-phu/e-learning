@@ -2,6 +2,6 @@
 
 class HomeController < ApplicationController
   def index
-    render json: { data: Time.zone.now }
+    render json: { data: Time.current }
   end
 end

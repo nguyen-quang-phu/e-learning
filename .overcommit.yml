@@ -39,7 +39,7 @@ PreCommit:
     enabled: false
 
   Pronto:
-    enabled: true
+    enabled: false
 
   # TODO: will research
   RakeTarget:
